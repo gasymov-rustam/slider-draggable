@@ -11,3 +11,178 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  border: 1px solid grey;
+}
+
+.vertical-slider {
+  height: 380px;
+  width: 50px;
+  border: 1px solid grey;
+}
+
+.vertical-slider1 {
+  height: 600px;
+  width: 50px;
+  border: 1px solid grey;
+}
+
+.example-thumb1 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 6px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
+.example-thumb1:active {
+  background: rgb(186, 199, 10);
+}
+
+.example-thumb {
+  font-size: 0.9em;
+  text-align: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 5px solid gray;
+  box-sizing: border-box;
+}
+
+.example-thumb.active {
+  background-color: grey;
+}
+
+.example-track {
+  position: relative;
+  background: #ddd;
+}
+
+.example-track.example-track-1 {
+  background: #f00;
+}
+
+.example-track.example-track-2 {
+  background: #0f0;
+}
+
+.example-track.example-track-3 {
+  background: rgb(119, 0, 255);
+}
+
+.example-track.example-track-4 {
+  background: rgb(28, 28, 29);
+}
+
+.horizontal-slider .example-track {
+  top: 20px;
+  height: 10px;
+}
+
+.horizontal-slider .example-thumb {
+  top: 1px;
+  width: 50px;
+  height: 48px;
+  line-height: 38px;
+}
+
+.vertical-slider .example-thumb,
+.vertical-slider1 .example-thumb {
+  left: 1px;
+  width: 48px;
+  line-height: 40px;
+  height: 50px;
+}
+
+.vertical-slider .example-track,
+.vertical-slider1 .example-track {
+  left: 20px;
+  width: 10px;
+}
+
+.example-thumb-custom {
+  top: 1px;
+  width: 50px;
+  height: 48px;
+  line-height: 38px;
+  left: 1px;
+  width: 48px;
+  line-height: 40px;
+  height: 50px;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 3px solid gray;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.example-mark {
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  top: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background: #000;
+}
+
+.example-track-custom {
+  width: 2px;
+  height: 80%;
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  background: rgb(71, 30, 218);
+}
+
+.horizontal-slider>span:nth-last-of-type(2) {
+  background: rgb(10, 10, 10);
+}
+
+.example-track-custom2 {
+  display: block;
+  width: 50%;
+  height: 3px;
+  /* top: 50%; */
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  background: rgb(71, 30, 218);
+}
+
+.example-track.example-track-3+span {
+  width: 100%;
+}
